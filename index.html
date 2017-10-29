@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Add, Order numbers - Rafael Meza</title>
+  <link rel="stylesheet" href="assets/stylesheet/reset.css">
+  <link rel="stylesheet" href="assets/stylesheet/main.css">
+  <link rel="stylesheet" href="assets/stylesheet/application.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fjalla+One">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Rafael Meza</h1>
+    </header>
+    <section>
+      <article class="left-side">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="768" height="768" viewBox="0 0 768 768">
+          <title></title>
+          <g id="icomoon-ignore">
+          </g>
+          <path fill="#32fedf" d="M96 415.5v-63h384v63h-384zM96 192h576v64.5h-576v-64.5zM96 576v-64.5h192v64.5h-192z"></path>
+        </svg>
+        <br>
+        <br>
+        <h2>
+          ADD
+          <br><br>
+          &
+          <br><br>
+          SORT
+          <br><br>
+          NUMBERS
+        </h2>
+      </article>
+      <article class="right-side">
+        <ul id="numbers" class="numbers"></ul>
+      </article>
+			<div id="flip-container" class="flip-container">
+				<div class="flipper">
+					<div class="front">
+            <button class="button-circle" onclick="showForm();">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                <title></title>
+                <g id="icomoon-ignore">
+                </g>
+                <path fill="#fff" d="M546.133 494.933c0-10.24 6.827-17.067 17.067-17.067h409.6c10.24 0 17.067 6.827 17.067 17.067s-6.827 17.067-17.067 17.067h-409.6c-10.24 0-17.067-6.827-17.067-17.067zM0 494.933c0-10.24 6.827-17.067 17.067-17.067h409.6c10.24 0 17.067 6.827 17.067 17.067s-6.827 17.067-17.067 17.067h-409.6c-10.24 0-17.067-6.827-17.067-17.067zM494.933 0c10.24 0 17.067 6.827 17.067 17.067v955.733c0 10.24-6.827 17.067-17.067 17.067s-17.067-6.827-17.067-17.067v-955.733c0-10.24 6.827-17.067 17.067-17.067z"></path>
+              </svg>
+            </button>
+					</div>
+					<div class="back">
+            <form id="add-number-form" onsubmit="return handleAddNumber();" autocomplete="off" novalidate >
+              <input type="text" onkeypress="return isNumberKey(event)" maxlength="6" />
+              <button type="submit" class="button">
+                ADD NUMBER
+              </button>
+            </form>
+					</div>
+				</div>
+			</div>
+    </section>
+  </main>
+  <script src="assets/javascript/application.js"></script>
+</body>
+</html>

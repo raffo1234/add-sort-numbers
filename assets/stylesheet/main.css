@@ -1,0 +1,13 @@
+body {
+  color: #444;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+input {
+  font: inherit;
+}
